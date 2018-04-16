@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My react mobx app",
   "scripts": {
-    "start": "webpack-dev-server --hot --open",
+    "start": "webpack-dev-server --hot --open --port 5000",
     "lint": "eslint src"
   },
   "repository": {
