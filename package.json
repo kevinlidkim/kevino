@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My react mobx app",
   "scripts": {
-    "start": "webpack-dev-server --hot --open --port 5000",
+    "start": "node server.js",
     "lint": "eslint src"
   },
   "repository": {
@@ -17,8 +17,7 @@
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-1": "^6.5.0",
-    "webpack-dev-server": "^2.7.1"
+    "babel-preset-stage-1": "^6.5.0"
   },
   "dependencies": {
     "express": "^4.16.3",
