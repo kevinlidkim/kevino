@@ -1,28 +1,16 @@
 {
-  "name": "mobx-react-boilerplate",
+  "name": "kevino",
   "version": "1.0.0",
-  "description": "Boilerplate for MobX + React project with JSX, ES6 and decorator compilation",
+  "description": "My react mobx app",
   "scripts": {
     "start": "webpack-dev-server --hot --open",
     "lint": "eslint src"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mobxjs/mobx-react-boilerplate.git"
+    "url": "https://github.com/kevinlidkim/kevino.git"
   },
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "mobx",
-    "starter-kit"
-  ],
-  "author": "Michel Weststrate <mweststrate@gmail.com> (http://github.com/mweststrate)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mobxjs/mobx/issues"
-  },
-  "homepage": "http://mobxjs.github.com/mobx",
+  "author": "Kevin Li",
   "devDependencies": {
     "babel-core": "^6.9.1",
     "babel-loader": "^7.1.2",
