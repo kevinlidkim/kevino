@@ -1,15 +1,16 @@
-const path = require('path');
-const express = require('express');
-const webpack = require('webpack');
-const webpackMiddleware = require('webpack-dev-middleware');
-const webpackHotMiddleware = require('webpack-hot-middleware');
-const config = require('./webpack.config.js');
+import path from 'path';
+import express from 'express';
+import webpack from 'webpack';
+import webpackMiddleware from 'webpack-dev-middleware';
+import webpackHotMiddleware from 'webpack-hot-middleware';
+import config from './webpack.config.js';
 
 const app = express();
 const port = 8000;
 const compiler = webpack(config);
 const index_path = path.join(__dirname, 'index.html');
 const public_path = express.static(path.join(__dirname, '/dist'));
+
 
 
 app.use(webpackMiddleware(compiler));
