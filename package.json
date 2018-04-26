@@ -1,42 +1,43 @@
 {
-  "name": "kevino",
-  "version": "1.0.0",
-  "description": "My react mobx app",
-  "scripts": {
-    "start": "babel-node --presets es2015 server.js",
-    "lint": "eslint src"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kevinlidkim/kevino.git"
-  },
-  "author": "Kevin Li",
-  "devDependencies": {
-    "babel-core": "^6.9.1",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-1": "^6.5.0",
-    "css-loader": "^0.28.11",
-    "extract-loader": "^2.0.1",
-    "file-loader": "^1.1.11",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1"
-  },
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "express": "^4.16.3",
-    "mobx": "^3.0.0",
-    "mobx-react": "^4.1.0",
-    "mobx-react-devtools": "^4.2.11",
-    "react": "^15.1.0",
-    "react-dom": "^15.6.2",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "webpack": "^4.5.0",
-    "webpack-dev-middleware": "^3.1.2",
-    "webpack-express-middleware": "^1.2.1",
-    "webpack-hot-middleware": "^2.21.2"
-  }
+	"name": "kevino",
+	"version": "1.0.0",
+	"description": "My react mobx app",
+	"scripts": {
+		"start": "babel-node --presets es2015 server.js",
+		"lint": "eslint src"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kevinlidkim/kevino.git"
+	},
+	"author": "Kevin Li",
+	"devDependencies": {
+		"babel-core": "^6.9.1",
+		"babel-loader": "^7.1.2",
+		"babel-plugin-transform-decorators-legacy": "^1.3.4",
+		"babel-preset-es2015": "^6.9.0",
+		"babel-preset-react": "^6.5.0",
+		"babel-preset-stage-1": "^6.5.0",
+		"css-loader": "^0.28.11",
+		"extract-loader": "^2.0.1",
+		"file-loader": "^1.1.11",
+		"node-sass": "^4.9.0",
+		"sass-loader": "^7.0.1"
+	},
+	"dependencies": {
+		"@material/button": "^0.35.0",
+		"babel-cli": "^6.26.0",
+		"express": "^4.16.3",
+		"mobx": "^3.0.0",
+		"mobx-react": "^4.1.0",
+		"mobx-react-devtools": "^4.2.11",
+		"react": "^15.1.0",
+		"react-dom": "^15.6.2",
+		"react-router": "^4.2.0",
+		"react-router-dom": "^4.2.2",
+		"webpack": "^4.5.0",
+		"webpack-dev-middleware": "^3.1.2",
+		"webpack-express-middleware": "^1.2.1",
+		"webpack-hot-middleware": "^2.21.2"
+	}
 }

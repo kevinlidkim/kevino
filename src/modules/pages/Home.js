@@ -6,6 +6,9 @@ export default class Home extends React.Component {
 
 		return (<div>
 			Home
+			<button className="foo-button mdc-button">
+				Button
+			</button>
 		</div>);
 	}
 }
