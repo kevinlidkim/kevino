@@ -34,12 +34,14 @@ export default class TodoList extends React.Component {
 			</li>
 		))
 
-		return (<div>
-			<h1>todos</h1>
-			<input className="create" onKeyPress={this.createNew.bind(this)} />
-			<input className="filter" value={filter} onChange={this.filter.bind(this)} />
-			<ul>{todoLis}</ul>
-			<a href="#" onClick={this.clearComplete.bind(this)}>Clear Complete</a>
-		</div>);
+		return (
+			<div>
+				<h1>todos</h1>
+				<input className="create" onKeyPress={this.createNew.bind(this)} />
+				<input className="filter" value={filter} onChange={this.filter.bind(this)} />
+				<ul>{todoLis}</ul>
+				<a href="#" onClick={this.clearComplete.bind(this)}>Clear Complete</a>
+			</div>
+		);
 	}
 }
