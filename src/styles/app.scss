@@ -3,6 +3,7 @@ $material-icons-font-path: '~material-icons/iconfont/';
 
 @import "@material/button/mdc-button";
 @import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/elevation/mdc-elevation";
 
 body {
 	margin: 0 0 0 0;
@@ -17,4 +18,15 @@ body {
 .teal-navbar {
 	@include mdc-top-app-bar-ink-color(indigo);
 	@include mdc-top-app-bar-fill-color(powderblue)	
+}
+
+.register-form {
+	max-width: 1280px;
+	min-width: 280px;
+	max-height: 800px;
+	min-height: 400px;
+	margin: auto;
+	margin-top: 40px;
+	padding-top: 20px;
+	text-align: center;
 }
