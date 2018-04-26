@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter } from 'react-router-dom'
 
-import store from "./modules/todo/TodoStore";
-import TodoList from "./modules/todo/TodoList";
+import App from "./app";
 
 const app = document.getElementById("root");
 
-ReactDOM.render(<TodoList store={store}/>, app);
+ReactDOM.render(<BrowserRouter><App/></BrowserRouter>, app);
