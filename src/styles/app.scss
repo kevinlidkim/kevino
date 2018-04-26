@@ -1,10 +1,20 @@
-body {
-	color: blue;
-}
+$material-icons-font-path: '~material-icons/iconfont/';
+@import 'material-icons/iconfont/material-icons.scss';
 
 @import "@material/button/mdc-button";
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+body {
+	margin: 0 0 0 0;
+}
 
 .foo-button {
-	@include mdc-button-ink-color(teal);
-	@include mdc-states(teal);
+	@include mdc-button-ink-color(indigo);
+	@include mdc-button-container-fill-color(powderblue)
+	@include mdc-button-icon-color(lightpink)
+}
+
+.teal-navbar {
+	@include mdc-top-app-bar-ink-color(indigo);
+	@include mdc-top-app-bar-fill-color(powderblue)	
 }
