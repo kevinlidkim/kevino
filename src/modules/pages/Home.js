@@ -8,11 +8,12 @@ export default class Home extends React.Component {
 
 		return (
 			<div className="register-form">
-				<div className="input-field">
-					<TextField type="text" />
-				</div>
+				<form>
+					<TextField required label="Email" type="email" />
+					<TextField required label="Password" type="password" />
+				</form>
 				<Button variant="raised">
-					Hello world
+					Submit
 				</Button>
 			</div>
 		);

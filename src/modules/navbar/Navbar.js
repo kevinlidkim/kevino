@@ -15,10 +15,10 @@ export default class Navbar extends React.Component {
 					<IconButton>
 						<Icon>menu</Icon>
 					</IconButton>
-					<IconButton>
+					<IconButton href="/">
 						<Icon>file_download</Icon>
 					</IconButton>
-					<IconButton>
+					<IconButton href="/about">
 						<Icon>print</Icon>
 					</IconButton>
 				</Toolbar>
