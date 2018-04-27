@@ -1,15 +1,20 @@
 import React from "react";
+import Button from "material-ui/Button";
+import TextField from "material-ui/TextField"
 
 export default class Home extends React.Component {
 
 	render() {
 
-		return (<div className="register-form mdc-elevation--z8">
-			Home
-			<button className="foo-button mdc-button mdc-button--raised">
-				<i className="material-icons mdc-button__icon" aria-hidden="true">favorite</i>
-				Button
-			</button>
-		</div>);
+		return (
+			<div className="register-form">
+				<div className="input-field">
+					<TextField type="text" />
+				</div>
+				<Button variant="raised">
+					Hello world
+				</Button>
+			</div>
+		);
 	}
 }

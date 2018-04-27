@@ -1,25 +1,10 @@
 $material-icons-font-path: '~material-icons/iconfont/';
 @import 'material-icons/iconfont/material-icons.scss';
 
-@import "@material/button/mdc-button";
-@import "@material/top-app-bar/mdc-top-app-bar";
-@import "@material/elevation/mdc-elevation";
-
 body {
 	margin: 0 0 0 0;
+	background: powderblue;
 }
-
-.foo-button {
-	@include mdc-button-ink-color(indigo);
-	@include mdc-button-container-fill-color(powderblue)
-	@include mdc-button-icon-color(lightpink)
-}
-
-.teal-navbar {
-	@include mdc-top-app-bar-ink-color(indigo);
-	@include mdc-top-app-bar-fill-color(powderblue)	
-}
-
 .register-form {
 	max-width: 1280px;
 	min-width: 280px;
@@ -29,4 +14,9 @@ body {
 	margin-top: 40px;
 	padding-top: 20px;
 	text-align: center;
+	background: white;
+}
+
+.input-field {
+	padding-bottom: 20px;
 }
