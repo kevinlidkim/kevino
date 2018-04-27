@@ -27,7 +27,6 @@ app.get('/api', function(req, res) {
 })
 
 app.get('*', (req, res) => {
-	console.log('gets in here');
 	res.sendFile(indexPath);
 })
 
