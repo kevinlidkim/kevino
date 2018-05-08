@@ -1,6 +1,7 @@
 import React from "react";
-import Button from "material-ui/Button";
-import TextField from "material-ui/TextField"
+
+import FormStore from "../form/FormStore";
+import Form from "../form/Form";
 
 export default class Home extends React.Component {
 
@@ -21,14 +22,9 @@ export default class Home extends React.Component {
 	render() {
 
 		return (
-			<div className="register-form">
-				<form>
-					<TextField required label="Email" type="email" />
-					<TextField required label="Password" type="password" />
-				</form>
-				<Button variant="raised" onClick={this.clicky.bind(this)}>
-					Submit
-				</Button>
+			<div>
+				Home
+				<Form store={FormStore} />
 			</div>
 		);
 	}
