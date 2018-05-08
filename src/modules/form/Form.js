@@ -12,23 +12,20 @@ export default class Form extends React.Component {
 	}
 
 	fillField(field, e) {
-		this.props.store[field] = e.target.value;
+		this.props.store.registerForm[field].value = e.target.value;
 	}
 
 	render() {
 
-		const { registerForm, registerFormFields } = this.props.store;
+		const { registerForm } = this.props.store;
 
-		const form = Object.keys(registerForm).map(field => {
-			let fieldType = "text";
-			let fieldLabel = registerFormFields[field];
-
-			if (field === "email") {
-				fieldType = "email";
-			} else if (field === "password") {
-				fieldType = "password";
-			}
-			return (<TextField required label={fieldLabel} type={fieldType} onChange={this.fillField.bind(this, {field})} />)
+		const form = Object.keys(registerForm).map(key => {
+			let field = registerForm[key];
+			return (
+				<div>
+					<TextField required label={field.label} type={field.type} onChange={this.fillField.bind(this, key)} className="form-field"/>
+				</div>
+			)
 		})
 
 		return (

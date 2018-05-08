@@ -5,6 +5,7 @@ body {
 	margin: 0 0 0 0;
 	background: powderblue;
 }
+
 .register-form {
 	min-width: 280px;
 	min-height: 400px;
@@ -15,4 +16,8 @@ body {
 	padding-top: 20px;
 	text-align: center;
 	background: white;
+
+	.form-field {
+		width: 50%;
+	}
 }
