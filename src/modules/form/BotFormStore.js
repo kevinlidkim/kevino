@@ -12,7 +12,7 @@ class BotFormStore {
 
 	sendMessage() {
 
-		if (config.gchat) {
+		if (config && config.gchat) {
 
 			let body = {
 				text: this.botForm.text
