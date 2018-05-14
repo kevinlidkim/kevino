@@ -7,6 +7,7 @@ import TodoList from "./modules/todo/TodoList";
 
 import Home from "./modules/pages/Home";
 import About from "./modules/pages/About";
+import Bot from "./modules/pages/Bot";
 import Navbar from "./modules/navbar/Navbar";
 
 export default class App extends React.Component {
@@ -19,6 +20,7 @@ export default class App extends React.Component {
 				<Switch>
 					<Route exact path="/" component={Home}/>
 					<Route path='/about' component={About}/>
+					<Route path='/bot' component={Bot}/>
 				</Switch>
 			</div>
 		);

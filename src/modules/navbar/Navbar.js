@@ -21,6 +21,9 @@ export default class Navbar extends React.Component {
 					<IconButton href="/about">
 						<Icon>print</Icon>
 					</IconButton>
+					<IconButton href="/bot">
+						<Icon>face</Icon>
+					</IconButton>
 				</Toolbar>
 			</AppBar>
 		);

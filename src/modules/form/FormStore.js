@@ -24,6 +24,7 @@ class FormStore {
 		}
 	}
 
+
 	register() {
 		console.log('register');
 		fetch('/api')
