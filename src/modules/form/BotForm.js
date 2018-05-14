@@ -7,6 +7,17 @@ import TextField from "material-ui/TextField";
 @observer
 export default class BotForm extends React.Component {
 
+	submit(e) {
+		if (e.which === 13) {
+			this.sendMessage();
+		}
+	}
+
+	disableEnter(e) {
+		if (e.which === 13) {
+			e.preventDefault();
+		}
+	}
 
 	sendMessage() {
 		this.props.store.sendMessage();
@@ -22,12 +33,12 @@ export default class BotForm extends React.Component {
 
 		const form = (
 			<div>
-				<TextField label={botForm.label} type={botForm.type} onChange={this.fillField.bind(this)} className="form-field"/>
+				<TextField label={botForm.label} type={botForm.type} onChange={this.fillField.bind(this)} onKeyPress={this.disableEnter.bind(this)} className="form-field"/>
 			</div>
 			)
 
 		return (
-			<div className="register-form">
+			<div className="register-form" onKeyPress={this.submit.bind(this)}>
 				<form>
 					{form}
 				</form>

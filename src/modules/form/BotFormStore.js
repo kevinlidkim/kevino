@@ -33,6 +33,7 @@ class BotFormStore {
 
 		} else {
 			// gchat endpoint not defined
+			console.log('no config')
 		}
 	}
 
