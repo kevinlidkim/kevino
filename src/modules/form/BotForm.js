@@ -35,7 +35,7 @@ export default class BotForm extends React.Component {
 			<div>
 				<TextField label={botForm.label} type={botForm.type} onChange={this.fillField.bind(this)} onKeyPress={this.disableEnter.bind(this)} className="form-field"/>
 			</div>
-			)
+		)
 
 		return (
 			<div className="register-form" onKeyPress={this.submit.bind(this)}>
